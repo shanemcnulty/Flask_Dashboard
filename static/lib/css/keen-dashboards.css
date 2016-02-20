@@ -1,0 +1,79 @@
+/*
+ * Full-page application style
+ */
+
+@font-face {
+    font-family: 'beaver';
+    src: url("/static/font/beaver.ttf") format('truetype');
+}
+
+body.application {
+    background: #f2f2f2;
+    padding: 60px 50px;
+    margin-top: 120px;
+    font-family: 'beaver';
+    font: #318189;
+    color: white;
+}
+
+body.application > .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body.application div[class^="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+body.application div[class^="col-"] div[class^="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body.application hr {
+    border-color: #d7d7d7;
+    margin: 10px 0;
+}
+
+.navbar-inverse {
+    background: -webkit-linear-gradient(#318189, #37A0AD);
+    height: 160px;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar a.navbar-brand {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+.chart-wrapper {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.chart-wrapper .chart-title {
+    background: -webkit-linear-gradient(#318189, #37A0AD);
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 7px 10px 4px;
+}
+
+.chart-wrapper .chart-stage {
+    /*min-height: 240px;*/
+    overflow: hidden;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.chart-wrapper .chart-notes {
+    background: #fbfbfb;
+    border-top: 1px solid #e2e2e2;
+    color: #808080;
+    font-size: 12px;
+    padding: 8px 10px 5px;
+}
